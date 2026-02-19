@@ -22,4 +22,14 @@ class AppStyles {
     fontSize: 16,
     color: AppColors.lightBlue,
   );
+  static TextStyle medium16DarkGrey = GoogleFonts.inter(
+    fontWeight: FontWeight.w500,
+    fontSize: 16,
+    color: AppColors.darkGrey,
+  );
+  static TextStyle small10DarkGrey = GoogleFonts.inter(
+    fontWeight: FontWeight.w500,
+    fontSize: 10,
+    color: AppColors.darkGrey,
+  );
 }
