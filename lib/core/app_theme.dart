@@ -5,6 +5,12 @@ import 'app_colors.dart';
 
 class AppTheme {
   static ThemeData theme=ThemeData(
+    appBarTheme: AppBarTheme(
+      backgroundColor: AppColors.darkGrey,
+      elevation: 0,
+
+
+    ),
       scaffoldBackgroundColor: AppColors.darkGrey,
 
       elevatedButtonTheme: ElevatedButtonThemeData(

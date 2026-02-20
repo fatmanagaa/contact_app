@@ -1,4 +1,5 @@
 import 'package:contact_app/core/app_theme.dart';
+import 'package:contact_app/screens/home/home_screen.dart';
 import 'package:contact_app/screens/splash_screen/splash_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -20,6 +21,7 @@ class MyApp extends StatelessWidget {
       initialRoute: AppRoutes.splashScreen,
       routes: {
         AppRoutes.splashScreen: (context) => SplashScreen(),
+        AppRoutes.homeScreen: (context) => HomeScreen(),
 
       },
 

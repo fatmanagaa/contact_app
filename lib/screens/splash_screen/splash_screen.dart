@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../core/app_assets.dart';
+import '../../core/app_routes.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -14,7 +15,9 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
 
     Future.delayed(const Duration(seconds: 5), () {
-      //todo: navigate to next screen
+      Navigator.pushReplacementNamed(context, AppRoutes.homeScreen);
+
+
     });
   }
 
