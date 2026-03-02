@@ -11,6 +11,11 @@ class AppStyles {
     fontSize: 20,
     color: AppColors.gold,
   );
+  static TextStyle bold20DarkGrey = GoogleFonts.inter(
+    fontWeight: FontWeight.w500,
+    fontSize: 20,
+    color: AppColors.darkGrey,
+  );
 
   static TextStyle medium16Gold = GoogleFonts.inter(
     fontWeight: FontWeight.w500,
@@ -30,6 +35,11 @@ class AppStyles {
   static TextStyle small10DarkGrey = GoogleFonts.inter(
     fontWeight: FontWeight.w500,
     fontSize: 10,
+    color: AppColors.darkGrey,
+  );
+  static TextStyle small14DarkGrey = GoogleFonts.inter(
+    fontWeight: FontWeight.w500,
+    fontSize: 14,
     color: AppColors.darkGrey,
   );
 }

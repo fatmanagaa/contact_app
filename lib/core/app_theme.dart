@@ -19,7 +19,7 @@ class AppTheme {
 
           alignment: Alignment.center,
           backgroundColor: MaterialStateProperty.all(AppColors.gold),
-          fixedSize: MaterialStateProperty.all(const Size(340, 60)),
+          fixedSize: MaterialStateProperty.all(const Size(320, 50)),
 
           shape: MaterialStateProperty.all(
             RoundedRectangleBorder(

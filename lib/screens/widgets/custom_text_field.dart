@@ -3,23 +3,26 @@ import 'package:flutter/material.dart';
 import '../../../core/app_colors.dart';
 
 class CustomTextField extends StatelessWidget {
-  bool? filled;
-  Color? fillColor;
-  Color? borderColor;
-  Widget? prefixIcon;
-  Widget? suffixIcon;
-  String? hintText;
-  TextStyle? hintStyle;
-  String? labelText;
-  TextStyle? labelStyle;
-  String? errorText;
-  TextStyle? errorStyle;
+ final bool? filled;
+  final Color? fillColor;
+ final Color? borderColor;
+ final Widget? prefixIcon;
+ final Widget? suffixIcon;
+ final String? hintText;
+ final TextStyle? hintStyle;
+final  String? labelText;
+ final TextStyle? labelStyle;
+ final String? errorText;
+final  TextStyle? errorStyle;
+ final String? Function(String?)? validator;
+ final Function(String)? onChanged;
+ final TextEditingController? controller;
 
-  CustomTextField({
+  const CustomTextField({
     super.key,
     this.filled,
     this.fillColor,
-    required this.borderColor,
+     this.borderColor,
     this.prefixIcon,
     this.suffixIcon,
     this.hintText,
@@ -27,7 +30,7 @@ class CustomTextField extends StatelessWidget {
     this.labelText,
     this.labelStyle,
     this.errorText,
-    this.errorStyle,
+    this.errorStyle,  this.onChanged, this.validator, this.controller,
   });
 
   @override
@@ -39,6 +42,7 @@ class CustomTextField extends StatelessWidget {
           color: borderColor,
           side: 2.0,
         ),
+
         focusedBorder: buildDecorationBorder(
           radius: 16.0,
           color: borderColor,
@@ -64,7 +68,12 @@ class CustomTextField extends StatelessWidget {
         labelStyle: labelStyle,
         errorText: errorText,
         errorStyle: errorStyle,
+
       ),
+      validator: validator,
+      onChanged: onChanged,
+      controller: controller,
+
     );
   }
 
@@ -72,6 +81,7 @@ class CustomTextField extends StatelessWidget {
     required radius,
     required color,
     required side,
+
   }) {
     return OutlineInputBorder(
       borderRadius: BorderRadius.circular(radius),
